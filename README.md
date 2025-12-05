@@ -1,16 +1,63 @@
-# React + Vite
+# Islamul Hoque – Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built with **React**, **Tailwind CSS**, and **Framer Motion**. It showcases my skills, projects, and contact information with smooth animations and polished UI/UX.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- **Responsive Design** – Works seamlessly across devices (desktop, tablet, mobile).
+- **Animated Sections** – Smooth scroll‑triggered animations using Framer Motion.
+- **Projects Showcase** – Filterable project cards with live demo & code links.
+- **Skills Section** – Progress bars highlighting frontend, backend, and tools expertise.
+- **Contact Section** – Interactive form + contact info with icons.
+- **Footer** – Quick links, social icons, and back‑to‑top button.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React.js, Tailwind CSS, Framer Motion
+
+---
+
+## 📂 Project Sections
+
+- **Home** – Intro tagline and hero section  
+- **About** – My journey in web development with MERN stack focus
+- **Skills** – Frontend, Backend, Tools with animated progress bars  
+- **Projects** – Featured projects with live demo & GitHub links  
+- **Contact** – Contact form and essential information  
+- **Footer** – Brand, quick links, social icons, and back‑to‑top button  
+
+---
+
+## 🌟 Featured Projects
+
+1. **TravelEase** – MERN car rental platform with vehicle exploration, booking management, and theme customization  
+   - [Live Demo](https://travelease-4bacc.web.app/) | [Code](https://github.com/Islamul-Hoque/Travel-Ease-Client)
+
+2. **NextShop** – Full‑stack e‑commerce website with dynamic product browsing and seller dashboard management  
+   - [Live Demo](https://next-shop-1aqj.vercel.app) | [Code](https://github.com/Islamul-Hoque/Next-Shop)
+
+3. **GreenNest** – MERN plant shop featuring secure authentication, product browsing, and a modern responsive UI  
+   - [Live Demo](https://green-nest-83896.web.app) | [Code](https://github.com/Islamul-Hoque/GreenNest)
+
+---
+
+## 📜 License
+
+This project is open‑source and available under the MIT License.
+
+--- 
+
+## 📞 Contact
+
+- 📧 Email: islamulhoque2006@gmail.com 
+- 📱 Phone: +8801761830425  
+- 📍 Location: Chittagong, Bangladesh  
+- 🔗 LinkedIn: [linkedin.com/in/Islamul-Hoque](https://linkedin.com/in/Islamul-Hoque)  
+- 💻 GitHub: [github.com/Islamul-Hoque](https://github.com/Islamul-Hoque)
+
+---
+

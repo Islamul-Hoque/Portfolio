@@ -56,7 +56,8 @@ const Projects = () => {
           transition={{ duration: 0.6 }}
           className="text-3xl md:text-4xl font-bold text-indigo-400 mb-6"
         >
-          Featured Projects
+          {/* Featured Projects */}
+          My Projects
         </motion.h2>
         <p className="text-gray-300 mb-10">
           Filter by technology stack to explore my best work
