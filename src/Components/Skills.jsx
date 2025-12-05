@@ -67,7 +67,8 @@ const Skills = () => {
           My Skills
         </motion.h2>
         <p className="text-gray-300 mb-10">
-          Technologies and tools I use to build modern web applications
+          {/* Technologies and tools I use to build modern web applications */}
+          My toolkit for building responsive, interactive, and scalable web applications
         </p>
 
         {/* Skills Grid */}

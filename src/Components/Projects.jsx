@@ -1,51 +1,36 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const allProjects = [
   {
-    name: "EcoTrack",
+    name: "TravelEase",
     tag: "MERN",
-    image: "https://i.ibb.co.com/mrxRKKX3/Pharande-Spaces-Blog-Image-2.jpg",
+    image: "https://i.ibb.co.com/nsCN6MjY/project-view.png",
     description:
-      "Community platform for eco-conscious individuals to explore sustainability challenges and track impact.",
-    live: "https://eco-track.vercel.app",
-    code: "https://github.com/ishfak/eco-track-client",
+      "A responsive MERN‐based car rental application enabling users to explore vehicles, manage bookings, and customize themes across devices.",
+    live: "https://travelease-4bacc.web.app/",
+    code: "https://github.com/Islamul-Hoque/Travel-Ease-Client",
   },
   {
-    name: "GameHub",
+    name: "GreenNest",
     tag: "React",
-    image: "https://i.ibb.co.com/mrxRKKX3/Pharande-Spaces-Blog-Image-2.jpg",
+    image: "https://i.ibb.co.com/dJxWfhTW/gn.png",
     description:
-      "Interactive online game library to discover, explore, and support game developers.",
-    live: "https://gamehub.vercel.app",
-    code: "https://github.com/ishfak/gamehub-client",
+      "GreenNest is a sleek single-page MERN application for plant lovers to explore, buy, and care for indoor plants with secure authentication and a modern responsive UI.",
+    live: "https://green-nest-83896.web.app",
+    code: "https://github.com/Islamul-Hoque/GreenNest",
   },
   {
-    name: "Footwear Zone",
+    name: "NextShop",
     tag: "Next.js",
-    image: "https://i.ibb.co.com/mrxRKKX3/Pharande-Spaces-Blog-Image-2.jpg",
+    image: "https://i.ibb.co.com/Wv4dDspW/Next.png",
     description:
-      "Modern e-commerce website for footwear enthusiasts with Firebase auth and admin dashboard.",
-    live: "https://footwear-zone.vercel.app",
-    code: "https://github.com/ishfak/footwear-zone-client",
+      "A full‐stack e‐commerce platform designed for dynamic product browsing and secure seller management.",
+    live: "https://next-shop-1aqj.vercel.app",
+    code: "https://github.com/Islamul-Hoque/Next-Shop",
   },
 ];
-
-const fadeCard = {
-  hidden: { opacity: 0, scale: 0.9, y: 30 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
-  },
-  exit: {
-    opacity: 0,
-    scale: 0.9,
-    y: 30,
-    transition: { duration: 0.4, ease: "easeIn" },
-  },
-};
 
 const Projects = () => {
   const [filter, setFilter] = useState("All");
@@ -99,44 +84,62 @@ const Projects = () => {
           <AnimatePresence>
             {filteredProjects.map((project) => (
               <motion.div
-  key={project.name}
-  initial={{ opacity: 0, y: 60, scale: 0.95 }}
-  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-  whileHover={{ scale: 1.03, boxShadow: "0px 8px 24px rgba(0,0,0,0.3)" }}
-  transition={{
-    duration: 0.6,
-    ease: "easeOut",
-    type: "spring",
-    bounce: 0.3,
-  }}
-  viewport={{ once: false, amount: 0.3 }}
-  className="bg-gray-800 rounded-lg overflow-hidden relative"
->
-  {/* Image + Tag */}
-  <div className="relative">
-    <img src={project.image} alt={project.name} className="w-full h-40 object-cover" />
-    <span className="absolute top-2 right-2 bg-indigo-500 text-white text-xs px-3 py-1 rounded-full shadow">
-      {project.tag}
-    </span>
-  </div>
+                key={project.name}
+                initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                whileHover={{
+                  scale: 1.03,
+                  boxShadow: "0px 8px 24px rgba(0,0,0,0.3)",
+                }}
+                transition={{
+                  duration: 0.6,
+                  ease: "easeOut",
+                  type: "spring",
+                  bounce: 0.3,
+                }}
+                viewport={{ once: false, amount: 0.3 }}
+                className="bg-gray-800 rounded-lg overflow-hidden relative flex flex-col"
+              >
+                {/* Image + Tag */}
+                <div className="relative">
+                  <img
+                    src={project.image}
+                    alt={project.name}
+                    className="w-full h-40 object-cover"
+                  />
+                  <span className="absolute top-2 right-2 bg-indigo-500 text-white text-xs px-3 py-1 rounded-full shadow">
+                    {project.tag}
+                  </span>
+                </div>
 
-  {/* Content */}
-  <div className="p-6">
-    <h3 className="text-xl font-semibold text-indigo-300 mb-2">{project.name}</h3>
-    <p className="text-gray-300 mb-4">{project.description}</p>
-    <div className="flex gap-4">
-      <a href={project.live} target="_blank" rel="noreferrer"
-         className="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded transition duration-200">
-        Live Demo
-      </a>
-      <a href={project.code} target="_blank" rel="noreferrer"
-         className="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded transition duration-200">
-        Code
-      </a>
-    </div>
-  </div>
-</motion.div>
-
+                {/* Content */}
+                <div className="p-6 flex flex-col h-full">
+                  <h3 className="text-xl font-semibold text-indigo-300 mb-2">
+                    {project.name}
+                  </h3>
+                  <p className="text-gray-300 mb-4 flex-grow">
+                    {project.description}
+                  </p>
+                  <div className="flex gap-4 mt-auto">
+                    <a
+                      href={project.code}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex-1 flex items-center justify-center gap-2 bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded transition duration-200"
+                    >
+                      <FaGithub /> Code
+                    </a>
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex-1 flex items-center justify-center gap-2 bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded transition duration-200"
+                    >
+                      <FaExternalLinkAlt /> Live Demo
+                    </a>
+                  </div>
+                </div>
+              </motion.div>
             ))}
           </AnimatePresence>
         </div>

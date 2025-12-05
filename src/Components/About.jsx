@@ -31,40 +31,40 @@ const About = () => {
 
         {/* Animated Content */}
         <motion.p
-          variants={textVariant}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}
-          className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6"
-        >
-          I am Ishfak, a MERN Stack Developer. I completed my B.Sc. in Computer
-          Science & Engineering from Kishoreganj University. My programming
-          journey started out of curiosity, and now I truly enjoy building
-          scalable web applications.
-        </motion.p>
+  variants={textVariant}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: false, amount: 0.3 }}
+  className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6"
+>
+I am Islamul Hoque, a passionate MERN Stack Developer. My journey in web development started with curiosity, and now I specialize in building scalable, responsive, and visually engaging websites.
 
-        <motion.p
-          variants={textVariant}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}
-          className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6"
-        >
-          I especially enjoy working with React, Node.js, Express, and MongoDB.
-          I also have a strong interest in UI/UX design because I want every
-          user experience to be smooth, modern, and engaging.
-        </motion.p>
+</motion.p>
 
-        <motion.p
-          variants={textVariant}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}
-          className="text-lg md:text-xl text-gray-300 leading-relaxed"
-        >
-          Outside of programming, I am passionate about sports and painting.
-          These hobbies keep me creative and help me explore new ideas.
-        </motion.p>
+<motion.p
+  variants={textVariant}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: false, amount: 0.3 }}
+  className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6"
+>
+  I especially enjoy working with React, Node.js, Express, and MongoDB.
+  I also have a strong interest in UI/UX design because I want every
+  user experience to be smooth, modern, and engaging.
+</motion.p>
+
+<motion.p
+  variants={textVariant}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: false, amount: 0.3 }}
+  className="text-lg md:text-xl text-gray-300 leading-relaxed"
+>
+  Beyond coding, I enjoy exploring design trends and experimenting with
+  interactive features that make applications stand out.
+</motion.p>
+
+
       </div>
     </section>
   );

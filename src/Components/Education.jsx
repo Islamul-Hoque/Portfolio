@@ -3,26 +3,26 @@ import { motion } from "framer-motion";
 
 const educationData = [
   {
-    degree: "B.Sc. in Computer Science & Engineering",
+    degree: "Bachelor of Science in Computer Science and Engineering",
     institution: "Kishoreganj University",
-    year: "2021 - 2025",
+    year: "2025 - 2029",
     details:
       "Focused on software development, web technologies, and database systems. Built multiple projects using MERN stack.",
   },
   {
-    degree: "Higher Secondary Certificate (HSC) - Science",
-    institution: "Kishoreganj College",
-    year: "2018 - 2020",
+    degree: "Complete Web Development Course",
+    institution: "Programming Hero",
+    year: "Jul 2024 - Dec 2024",
     details:
-      "Studied core science subjects including Physics, Chemistry, and Mathematics. Developed strong analytical foundation.",
+      "Comprehensive web development training covering HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB, and modern web technologies.",
   },
-  {
-    degree: "Secondary School Certificate (SSC) - Science",
-    institution: "Kishoreganj High School",
-    year: "2016 - 2018",
-    details:
-      "Completed secondary education with focus on science group subjects. Built early interest in programming.",
-  },
+  // {
+  //   degree: "Secondary School Certificate (SSC) - Science",
+  //   institution: "Kishoreganj High School",
+  //   year: "2016 - 2018",
+  //   details:
+  //     "Completed secondary education with focus on science group subjects. Built early interest in programming.",
+  // },
 ];
 
 const fadeUp = {
@@ -47,10 +47,19 @@ const Education = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
-          className="text-3xl md:text-4xl font-bold text-indigo-400 mb-12"
+          className="text-3xl md:text-4xl font-bold text-indigo-400 mb-8"
         >
-          Education
+          Education & Certification
         </motion.h2>
+        <motion.p
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.3 }}
+          className="text-lg md:text-xl text-gray-200 mb-12"
+        >
+          My academic background and professional training
+        </motion.p>
 
         {/* Education Timeline */}
         <div className="space-y-8 text-left">

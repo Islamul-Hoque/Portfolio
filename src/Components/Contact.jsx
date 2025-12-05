@@ -1,6 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaReply, FaRegCommentDots } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+  FaReply,
+  FaRegCommentDots,
+} from "react-icons/fa";
 
 const leftVariant = {
   hidden: { opacity: 0, x: -80 },
@@ -38,68 +44,68 @@ const Contact = () => {
           Get In Touch
         </motion.h2>
         <p className="text-gray-300 text-center mb-10">
-          I am currently open to full-time, contract or part-time opportunities in MERN stack development.
+          Let’s turn ideas into interactive web experiences — I’m open to MERN
+          stack opportunities.
         </p>
 
         {/* Grid Layout */}
         <div className="grid md:grid-cols-2 gap-10">
           {/* Left: Contact Info */}
-      <motion.div
-  variants={leftVariant}
-  initial="hidden"
-  whileInView="visible"
-  viewport={{ once: false, amount: 0.3 }}
-  className="bg-gray-800 p-8 rounded-lg shadow space-y-6"
->
-  <h3 className="text-xl font-semibold text-indigo-300 mb-4">
-    Contact Info
-  </h3>
+          <motion.div
+            variants={leftVariant}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.3 }}
+            className="bg-gray-800 p-8 rounded-lg shadow space-y-6"
+          >
+            <h3 className="text-xl font-semibold text-indigo-300 mb-4">
+              Contact Info
+            </h3>
 
-  {/* Email */}
-  <div className="flex items-center gap-2">
-    <div className="bg-indigo-500 p-2 rounded-full text-white text-lg mt-1">
-      <FaEnvelope />
-    </div>
-    <div>
-      <p className="text-gray-300 font-medium mb-1">Email</p>
-      <p className="text-gray-400">ishfak.dev@example.com</p>
-    </div>
-  </div>
+            {/* Email */}
+            <div className="flex items-center gap-2">
+              <div className="bg-indigo-500 p-2 rounded-full text-white text-lg mt-1">
+                <FaEnvelope />
+              </div>
+              <div>
+                <p className="text-gray-300 font-medium mb-1">Email</p>
+                <p className="text-gray-400">ishfak.dev@example.com</p>
+              </div>
+            </div>
 
-  {/* Phone */}
-  <div className="flex items-center gap-2">
-    <div className="bg-indigo-500 p-2 rounded-full text-white text-lg mt-1">
-      <FaPhoneAlt />
-    </div>
-    <div>
-      <p className="text-gray-300 font-medium mb-1">Phone</p>
-      <p className="text-gray-400">+880 1234 567890</p>
-    </div>
-  </div>
+            {/* Phone */}
+            <div className="flex items-center gap-2">
+              <div className="bg-indigo-500 p-2 rounded-full text-white text-lg mt-1">
+                <FaPhoneAlt />
+              </div>
+              <div>
+                <p className="text-gray-300 font-medium mb-1">Phone</p>
+                <p className="text-gray-400">+880 1234 567890</p>
+              </div>
+            </div>
 
-  {/* Address */}
-  <div className="flex items-center gap-2">
-    <div className="bg-indigo-500 p-2 rounded-full text-white text-lg mt-1">
-      <FaMapMarkerAlt />
-    </div>
-    <div>
-      <p className="text-gray-300 font-medium mb-1">Address</p>
-      <p className="text-gray-400">Chittagong City, Bangladesh</p>
-    </div>
-  </div>
+            {/* Address */}
+            <div className="flex items-center gap-2">
+              <div className="bg-indigo-500 p-2 rounded-full text-white text-lg mt-1">
+                <FaMapMarkerAlt />
+              </div>
+              <div>
+                <p className="text-gray-300 font-medium mb-1">Address</p>
+                <p className="text-gray-400">Chittagong City, Bangladesh</p>
+              </div>
+            </div>
 
-  {/* Response Time */}
-  <div className="flex items-center gap-2">
-    <div className="bg-indigo-500 p-2 rounded-full text-white text-lg mt-1">
-      <FaRegCommentDots/>
-    </div>
-    <div>
-      <p className="text-gray-300 font-medium mb-1">Response Time</p>
-      <p className="text-gray-400">Usually within 24 hours</p>
-    </div>
-  </div>
-</motion.div>
-
+            {/* Response Time */}
+            <div className="flex items-center gap-2">
+              <div className="bg-indigo-500 p-2 rounded-full text-white text-lg mt-1">
+                <FaRegCommentDots />
+              </div>
+              <div>
+                <p className="text-gray-300 font-medium mb-1">Response Time</p>
+                <p className="text-gray-400">Usually within 24 hours</p>
+              </div>
+            </div>
+          </motion.div>
 
           {/* Right: Contact Form */}
           <motion.form
