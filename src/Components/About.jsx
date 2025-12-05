@@ -17,7 +17,7 @@ const About = () => {
       id="about"
       className="bg-gray-900 text-white min-h-screen flex items-center px-8 md:px-16 py-20"
     >
-      <div className="max-w-5xl mx-auto text-center">
+      <div className=" mx-auto text-center">
         {/* Centered Title */}
         <motion.h2
           variants={textVariant}

@@ -47,7 +47,7 @@ const Projects = () => {
       id="projects"
       className="bg-gray-900 text-white min-h-screen px-8 md:px-16 py-20"
     >
-      <div className="max-w-6xl mx-auto text-center">
+      <div className=" mx-auto text-center">
         {/* Heading */}
         <motion.h2
           initial={{ opacity: 0, y: -30 }}

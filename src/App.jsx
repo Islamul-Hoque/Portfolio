@@ -11,8 +11,8 @@ import Skills from './Components/Skills'
 function App() {
 
   return (
-    <>
-      <Navbar/>
+    <div className='max-w-7xl mx-auto'>
+      <div className='sticky top-0 z-5000'><Navbar/></div>
       <Hero/>
       <About/>
       <Skills/>
@@ -20,7 +20,7 @@ function App() {
       <Projects/>
       <Contact/>
       <Footer/>
-    </>
+    </div>
   )
 }
 

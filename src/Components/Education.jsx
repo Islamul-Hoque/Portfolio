@@ -40,7 +40,7 @@ const Education = () => {
       id="education"
       className="bg-gray-900 text-white min-h-screen px-8 md:px-16 py-20"
     >
-      <div className="max-w-5xl mx-auto text-center">
+      <div className=" mx-auto text-center">
         {/* Section Heading */}
         <motion.h2
           variants={fadeUp}

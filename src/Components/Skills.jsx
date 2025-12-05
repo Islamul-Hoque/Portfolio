@@ -12,7 +12,7 @@ const skillsData = [
       { name: "JavaScript (ES6+)", percent: 85 },
       { name: "React.js", percent: 85 },
       { name: "Next.js", percent: 75 },
-      { name: "Framer Motion", percent: 80 },
+      // { name: "Framer Motion", percent: 80 },
     ],
   },
   {
@@ -33,9 +33,10 @@ const skillsData = [
     skills: [
       { name: "Git", percent: 85 },
       { name: "GitHub", percent: 85 },
-      { name: "Vercel", percent: 80 },
-      { name: "Netlify", percent: 78 },
-      { name: "Cloudflare", percent: 70 },
+      { name: "Chrome DevTools", percent: 82 },
+      { name: "VS Code", percent: 80 },
+      { name: "Thunder Client", percent: 75 },
+      { name: "Figma", percent: 70 },
     ],
   },
 ];
@@ -55,7 +56,7 @@ const Skills = () => {
       id="skills"
       className="bg-gray-900 text-white min-h-screen px-8 md:px-16 py-20"
     >
-      <div className="max-w-6xl mx-auto text-center">
+      <div className=" mx-auto text-center">
         {/* Section Heading */}
         <motion.h2
           variants={fadeUp}

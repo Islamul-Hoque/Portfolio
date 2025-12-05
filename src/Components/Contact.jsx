@@ -1,38 +1,43 @@
-import React from "react";
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import {
   FaEnvelope,
   FaPhoneAlt,
   FaMapMarkerAlt,
-  FaReply,
   FaRegCommentDots,
 } from "react-icons/fa";
+import toast, { Toaster } from "react-hot-toast";
 
-const leftVariant = {
-  hidden: { opacity: 0, x: -80 },
+// Common bottom-to-top variant
+const bottomVariant = {
+  hidden: { opacity: 0, y: 80 },
   visible: {
     opacity: 1,
-    x: 0,
-    transition: { duration: 0.8, ease: "easeOut" },
-  },
-};
-
-const rightVariant = {
-  hidden: { opacity: 0, x: 80 },
-  visible: {
-    opacity: 1,
-    x: 0,
+    y: 0,
     transition: { duration: 0.8, ease: "easeOut" },
   },
 };
 
 const Contact = () => {
+  const formRef = useRef(null);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+   
+    toast.success("Message sent successfully!");
+    
+    formRef.current.reset();
+  };
+
   return (
     <section
       id="contact"
       className="bg-gray-900 text-white min-h-screen px-8 md:px-16 py-20"
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="mx-auto">
+        {/* Toast container */}
+        <Toaster position="top-center" reverseOrder={false} />
+
         {/* Heading */}
         <motion.h2
           initial={{ opacity: 0, y: -30 }}
@@ -52,7 +57,7 @@ const Contact = () => {
         <div className="grid md:grid-cols-2 gap-10">
           {/* Left: Contact Info */}
           <motion.div
-            variants={leftVariant}
+            variants={bottomVariant}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.3 }}
@@ -109,7 +114,9 @@ const Contact = () => {
 
           {/* Right: Contact Form */}
           <motion.form
-            variants={rightVariant}
+            ref={formRef}
+            onSubmit={handleSubmit}
+            variants={bottomVariant}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.3 }}
@@ -119,6 +126,7 @@ const Contact = () => {
               <label className="block text-gray-300 mb-2">Full Name</label>
               <input
                 type="text"
+                required
                 placeholder="Enter name"
                 className="w-full px-4 py-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-indigo-400"
               />
@@ -127,6 +135,7 @@ const Contact = () => {
               <label className="block text-gray-300 mb-2">Email Address</label>
               <input
                 type="email"
+                required
                 placeholder="Enter email"
                 className="w-full px-4 py-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-indigo-400"
               />
@@ -135,6 +144,7 @@ const Contact = () => {
               <label className="block text-gray-300 mb-2">Message</label>
               <textarea
                 rows="4"
+                required
                 placeholder="Enter message"
                 className="w-full px-4 py-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-indigo-400"
               ></textarea>

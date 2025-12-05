@@ -15,7 +15,7 @@ const Hero = () => {
       id="hero"
       className="bg-gray-900 text-white min-h-screen flex items-center px-8 md:px-16"
     >
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div className="l mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Right Side: Image (small devices up) */}
         <motion.div
           initial={{ opacity: 0, y: -60 }}
@@ -54,11 +54,9 @@ const Hero = () => {
           <div className="flex flex-col md:flex-row items-center gap-6 mt-6">
             {/* Resume Button */}
             <a
-              href="https://drive.google.com/file/d/1VFQ8OPB9Ht8ods-cUFKx3bBOihQ-4gvY/view?usp=drive_link"
-              //    href={require("../assets/IslamulHoque_Resume.pdf")}
+              href="https://drive.google.com/uc?export=download&id=1VFQ8OPB9Ht8ods-cUFKx3bBOihQ-4gvY"
               target="_blank"
               rel="noreferrer"
-              download
               className="flex items-center gap-2 bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold shadow transition duration-200"
             >
               <FaDownload /> Download Resume
