@@ -4,12 +4,21 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const allProjects = [
   {
+    name: "eTuitionBD",
+    tag: "MERN",
+    image: "https://i.ibb.co.com/Fb1b7nhs/e-Tuition-BD2.png",
+    description:
+      "MERN-based tuition system with role-based access, secure auth, Stripe payments, and sleek dashboards for managing students, tutors & admins",
+    live: "e-tuition-bd-296b7.web.app",
+    code: "https://github.com/Islamul-Hoque/eTuitionBd-client",
+  },
+  {
     name: "TravelEase",
     tag: "MERN",
     image: "https://i.ibb.co.com/nsCN6MjY/project-view.png",
     description:
       "A responsive MERN‐based car rental application enabling users to explore vehicles, manage bookings, and customize themes across devices.",
-    live: "https://travelease-4bacc.web.app/",
+    live: "https://travelease-4bacc.web.app",
     code: "https://github.com/Islamul-Hoque/Travel-Ease-Client",
   },
   {
@@ -36,9 +45,7 @@ const Projects = () => {
   const [filter, setFilter] = useState("All");
 
   const filteredProjects =
-    filter === "All"
-      ? allProjects
-      : allProjects.filter((project) => project.tag === filter);
+    filter === "All" ? allProjects : allProjects.filter((project) => project.tag === filter);
 
   const filters = ["All", "React", "Next.js", "MERN"];
 
