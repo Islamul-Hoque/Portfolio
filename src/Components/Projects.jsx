@@ -4,13 +4,13 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const allProjects = [
   {
-    name: "eTuitionBD",
+    name: "EduConnect ",
     tag: "MERN",
     image: "https://i.ibb.co.com/Fb1b7nhs/e-Tuition-BD2.png",
     description:
       "MERN-based tuition system with role-based access, secure auth, Stripe payments, and sleek dashboards for managing students, tutors & admins",
-    live: "e-tuition-bd-296b7.web.app",
-    code: "https://github.com/Islamul-Hoque/eTuitionBd-client",
+    live: "https://edu-connect-e1d7e.web.app/",
+    code: "https://github.com/Islamul-Hoque/Edu-Connect-client",
   },
   {
     name: "TravelEase",
