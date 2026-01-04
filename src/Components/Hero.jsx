@@ -54,7 +54,8 @@ const Hero = () => {
           <div className="flex flex-col md:flex-row items-center gap-6 mt-6">
             {/* Resume Button */}
             <a
-              href="https://drive.google.com/uc?export=download&id=1VFQ8OPB9Ht8ods-cUFKx3bBOihQ-4gvY"
+              // href="https://drive.google.com/uc?export=download&id=1VFQ8OPB9Ht8ods-cUFKx3bBOihQ-4gvY"
+              href="https://drive.google.com/uc?export=download&id=1AQi6U6clgnUpLnDp8JK6jj8hIPX713Of"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold shadow transition duration-200"

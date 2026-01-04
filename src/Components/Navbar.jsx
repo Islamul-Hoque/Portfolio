@@ -70,7 +70,7 @@ const Navbar = () => {
         
       </ul>
     </div>
-    <a className="text-xl font-bold text-indigo-400">Islamul Hoque</a>
+    <a className="md:text-xl font-bold text-indigo-400">Islamul Hoque</a>
   </div>
   <div className="navbar-end hidden lg:flex ">
     <ul className="menu menu-horizontal px-1">

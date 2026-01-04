@@ -14,7 +14,7 @@ const educationData = [
     institution: "Programming Hero",
     year: "Jul 2024 - Dec 2024",
     details:
-      "Comprehensive web development training covering HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB, and modern web technologies.",
+      "Comprehensive web development training covering HTML, CSS, Tailwind CSS, JavaScript, React.js, Next.js, Node.js, Express.js, MongoDB, and modern web technologies.",
   },
   // {
   //   degree: "Secondary School Certificate (SSC) - Science",
