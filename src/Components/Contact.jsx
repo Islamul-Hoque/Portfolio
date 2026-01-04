@@ -19,8 +19,8 @@ const bottomVariant = {
 };
 
 const Contact = () => {
-  const formRef = useRef(null);
 
+  const formRef = useRef(null);
   const handleSubmit = (e) => {
     e.preventDefault();
     toast.success("Message sent successfully!");
@@ -72,6 +72,7 @@ const Contact = () => {
           </div>
         </div>
       </motion.div>
+
       <motion.form ref={formRef} onSubmit={handleSubmit} variants={bottomVariant} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.3 }} className="bg-gray-800 p-8 rounded-lg shadow space-y-6">
         <div>
           <label className="block text-gray-300 mb-2">Full Name</label>
@@ -86,11 +87,11 @@ const Contact = () => {
           <textarea rows="4" required placeholder="Enter message" className="w-full px-4 py-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-indigo-400"></textarea>
         </div>
         <button type="submit" className="w-full bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 rounded transition duration-200">Send Message</button>
+
       </motion.form>
     </div>
   </div>
 </div>
-
   );
 };
 
