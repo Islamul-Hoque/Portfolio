@@ -47,7 +47,7 @@ const Contact = () => {
           <div className="bg-indigo-500 p-2 rounded-full text-white text-lg mt-1"><FaPhoneAlt /></div>
           <div>
             <p className="text-gray-300 font-medium mb-1">Phone</p>
-            <p className="text-gray-400">+88001577432917</p>
+            <p className="text-gray-400">+8801577432917</p>
           </div>
         </div>
         <div className="flex items-center gap-2">

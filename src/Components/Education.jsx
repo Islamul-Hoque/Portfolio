@@ -16,13 +16,6 @@ const educationData = [
     details:
       "Comprehensive web development training covering HTML, CSS, Tailwind CSS, JavaScript, React.js, Next.js, Node.js, Express.js, MongoDB, and modern web technologies.",
   },
-  // {
-  //   degree: "Secondary School Certificate (SSC) - Science",
-  //   institution: "Kishoreganj High School",
-  //   year: "2016 - 2018",
-  //   details:
-  //     "Completed secondary education with focus on science group subjects. Built early interest in programming.",
-  // },
 ];
 
 const fadeUp = {

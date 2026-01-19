@@ -3,8 +3,6 @@ import {
   FaDownload,
   FaGithub,
   FaLinkedin,
-  FaTwitter,
-  FaFacebook,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import profile from "../assets/profile.jpeg";
@@ -54,8 +52,7 @@ const Hero = () => {
           <div className="flex flex-col md:flex-row items-center gap-6 mt-6">
             {/* Resume Button */}
             <a
-              // href="https://drive.google.com/uc?export=download&id=1VFQ8OPB9Ht8ods-cUFKx3bBOihQ-4gvY"
-              href="https://drive.google.com/uc?export=download&id=1AQi6U6clgnUpLnDp8JK6jj8hIPX713Of"
+              href="https://drive.google.com/uc?export=download&id=1Ayf9mT8R6bqHyuOiaeUfmeXao-gfnc5j"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold shadow transition duration-200"
@@ -81,22 +78,6 @@ const Hero = () => {
               >
                 <FaLinkedin />
               </a>
-              {/* <a
-                href="https://twitter.com/ishfak"
-                target="_blank"
-                rel="noreferrer"
-                className="bg-gray-800 p-3 rounded-full text-white hover:bg-indigo-500 hover:scale-110 hover:shadow-lg transition duration-300"
-              >
-                <FaTwitter />
-              </a>
-              <a
-                href="https://facebook.com/ishfak"
-                target="_blank"
-                rel="noreferrer"
-                className="bg-gray-800 p-3 rounded-full text-white hover:bg-indigo-500 hover:scale-110 hover:shadow-lg transition duration-300"
-              >
-                <FaFacebook />
-              </a> */}
             </div>
           </div>
         </motion.div>
