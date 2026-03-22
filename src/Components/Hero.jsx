@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  FaDownload,
-  FaGithub,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaDownload, FaGithub, FaLinkedin, } from "react-icons/fa";
 import { motion } from "framer-motion";
 import profile from "../assets/profile.jpeg";
 
